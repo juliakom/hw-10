@@ -3,19 +3,25 @@
 let coffeeMachine = {
   message: 'Your coffee is ready!',
 
-  start: function funcStart() {
-    setTimeout(console.log(this.message), 3000);
-  },
+  start: function() {
+    setTimeout(() => { 
+      console.log(this.message);
+    }, 3000);
+  }
 }
 
 coffeeMachine.start();
 
+//-------------------
+
 let coffeeMachine2 = {
   message: 'Your coffee is ready!',
 
-  start: function funcStart() {
-    setTimeout(console.log(teaPlease.message), 3000);
-  },
+  start: function() {
+    setTimeout(() => { 
+      console.log(teaPlease.message);
+    }, 3000);
+  }
 }
 
 let teaPlease = {
@@ -23,7 +29,6 @@ let teaPlease = {
 }
 
 coffeeMachine2.start();
-
 
 //2----------------------
 
